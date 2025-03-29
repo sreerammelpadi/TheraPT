@@ -1,0 +1,60 @@
+.center{
+  margin : 0 auto;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  padding: 2rem;
+}
+.title {
+  text-align: center;
+}
+
+.promptInput {
+  width: 750px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  height: 50px;
+  margin-bottom: 2rem;
+}
+
+.submitBtn {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.outputWindow {
+  width: 750px;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #111;
+  color: #f9f9f9;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+}
+
+.message {
+  margin-bottom: 0.75rem;
+}
+
+.message.patient {
+  text-align: right;
+}
+
+.message.therapist {
+  text-align: left;
+}
+
+.titleRow {
+  display: flex;
+  align-items: center; 
+  gap: 0.5rem;           
+}
+
+.logo {
+  width: 150px; 
+  height: auto;
+}
