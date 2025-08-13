@@ -1,4 +1,4 @@
-# Thera-pT: Transformer-based Empathetic Dialogue System
+# TheraPT: Transformer-based Empathetic Dialogue System
 
 ## Overview
 
