@@ -41,7 +41,7 @@ The system excels in maintaining empathetic, non-monotonous conversations while 
 
 ```
 git clone https://github.com/sreerammelpadi/TheraPT.git
-cd thera-pt
+cd TheraPT
 ```
 
 2. Install dependencies:
