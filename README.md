@@ -12,6 +12,8 @@ Key highlights:
 
 This project was developed as part of the CSE 676 Deep Learning course final project. For a detailed walkthrough, refer to the attached presentation (DL-Project-Presentation.pptx) and code (main.ipynb).
 
+![](files/TheraPT.png)
+
 ## Features
 
 - **Base Model**: GPT-2 Small (124M parameters, ~473MB size) for lightweight deployment.
@@ -38,7 +40,7 @@ The system excels in maintaining empathetic, non-monotonous conversations while 
 1. Clone the repository:
 
 ```
-git clone https://github.com/your-repo/thera-pt.git
+git clone https://github.com/sreerammelpadi/TheraPT.git
 cd thera-pt
 ```
 
@@ -75,9 +77,9 @@ Use the interactive loop in the notebook for testing:
 
 ```python
 while True:
-user_input = input("Patient: ")
-if user_input.lower() == "quit":
-break
+    user_input = input("Patient: ")
+    if user_input.lower() == "quit":
+        break
 # Generate response with summarization
 therapist_response = generate_response(prompt)
 print(f"Therapist: {therapist_response}")
@@ -97,11 +99,12 @@ For long conversations, BART summaries ensure context retention.
 
 ## Architecture
 
-*(Diagram created with LucidChart; see attached PPT for full details.)*
 
 - **Input**: User prompt + summarized history.
 - **Processing**: Fine-tuned GPT-2 generates empathetic response.
 - **Output**: Therapist-like dialogue with reasoning elements.
+
+![](files/arch.png)
 
 ## Datasets
 
@@ -118,16 +121,6 @@ Preprocessed to format: `Patient: <input> Therapist: <response>`.
 
 See the "Observations" and "Other Approaches Tried" sections in the attached PPT for examples and insights.
 
-## Contributors
-
-- Abhijeet Pathak (33%)
-- Sreeram Melpadi (33%)
-- Jagannath Chivukula (33%)
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ***
 
-For more technical details, explore the attached code notebook (main.ipynb) and presentation (DL-Project-Presentation.pptx). If you have questions or improvements, feel free to contribute!
+For more technical details, explore the attached code notebook (main.ipynb). If you have questions or improvements, feel free to contribute.
